@@ -95,7 +95,114 @@ button {
     }
 }
 
-/*PROJECTS*/
+/*TABLE PROJECTS*/
+.container-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+    h1 {
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .table-projects {
+        img {
+            max-width: 40px;
+        }
+
+        th, td {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        th {
+            font-size: 18px;
+        }
+
+        td {
+            font-size: 14px;
+            word-wrap: break-word;
+
+            button {    
+                height: 30px;
+                width: 60px;
+                margin-top: -5px;
+                background: #fff;
+                font-weight: bold;
+                color: #757575;
+                border: 0;
+                border-radius: 4px;
+                font-size: 16px;
+                transition: background 0.3s;
+                box-shadow: 0px 0px 0.5rem #fff;
+            }
+
+            .edit {
+                &:hover {
+                    background: #00529B;
+                    color: #fff;
+                    box-shadow: 0px 0px 0.5rem #00529B;
+                }
+            }
+
+            .delete {
+                &:hover {
+                    background: #D8000C;
+                    color: #fff;
+                    box-shadow: 0px 0px 0.5rem #D8000C;
+                }
+            }
+        }
+    }
+}
+
+/*FORM-PROJECTS*/
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+    input {
+        width: 300px;
+        padding: 5px 15px;
+        border-radius: 4px;
+        outline: none;
+        border: 1px solid #eee;
+        margin-top: 10px;
+        box-shadow: 0px 0px 0.5rem #fff;
+
+        &::placeholder {
+            font-weight: bold;
+        }
+    }
+
+    button {
+        margin: 5px 0 0;
+        height: 35px;
+        width: 300px;
+        background: #fff;
+        font-weight: bold;
+        color: #757575;
+        border: 0;
+        border-radius: 4px;
+        font-size: 16px;
+        margin: 10px 0px 10px 0;
+        transition: background 0.3s;
+        box-shadow: 0px 0px 0.5rem #fff;
+
+        &:hover {
+          background: #28a745;
+          color: #fff;
+          box-shadow: 0px 0px 0.5rem #28a745;
+        }
+      }
+}
 
 /*FOOTER*/
 footer {

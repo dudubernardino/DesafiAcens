@@ -26,9 +26,51 @@
         </div>
     </div>
 
+    <div class="container-projects">
+        <h1>Projetos</h1>
+
+        <table class="table table-borderless table-projects">
+            <thead>
+                <tr>
+                <th scope="col"><img src="assets/images/LogoAzul.png"></th>
+                <th scope="col">Nome</th>
+                <th scope="col">Stacks</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Dias</th>
+                <th scope="col">Devs</th>
+                <th scope="col">Editar</th>
+                <th scope="col">Deletar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Fisiovita</td>
+                    <td>Ruby && Angular</td>
+                    <td>R$2250</td>
+                    <td>80 dias</td>
+                    <td>Raimundo && Vinicius</td>
+                    <td><button class="edit">Editar</button></td>
+                    <td><button class="delete">Deletar</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <form id="form">
+        <input name="name" placeholder="Nome" id="name">
+        <input name="stacks" placeholder="Stacks" id="stacks">
+        <input type="number" name="value" placeholder="Valor R$" id="value">
+        <input type="number" name="days" placeholder="Dias úteis" id="days">
+        <input name="developer" placeholder="Desenvolvedores" id="devs">
+
+        <button type="submit">Confirmar</button>
+    </form>
+
     <footer>
         <a href="http://acensjr.com/" target="_blank"><img src="./assets//images//LogoAzul.png" alt="Acens"></a>
     </footer>
+    
 </body>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
