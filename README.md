@@ -74,6 +74,7 @@ Criando um novo projeto com JS
   }
 ```
 
+## Delete
 **Função delete**
 ```javascript
   const onDelete = (btn) => {
@@ -95,6 +96,7 @@ Criando um novo projeto com JS
   }
 ```
 
+## Update
 **Função update**
 ```javascript
   const updateProject = (formData) => {
