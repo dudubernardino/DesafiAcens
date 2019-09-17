@@ -29,7 +29,7 @@
     <div class="container-projects">
         <h1>Projetos</h1>
 
-        <table class="table table-borderless table-projects">
+        <table class="table table-borderless table-projects" id="projects">
             <thead>
                 <tr>
                 <th scope="col"><img src="assets/images/LogoAzul.png"></th>
@@ -43,21 +43,12 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Fisiovita</td>
-                    <td>Ruby && Angular</td>
-                    <td>R$2250</td>
-                    <td>80 dias</td>
-                    <td>Raimundo && Vinicius</td>
-                    <td><button class="edit">Editar</button></td>
-                    <td><button class="delete">Deletar</button></td>
-                </tr>
+                <tr></tr>
             </tbody>
         </table>
     </div>
     
-    <form id="form">
+    <form id="form" onsubmit="onFormSubmit(event)">
         <input name="name" placeholder="Nome" id="name">
         <input name="stacks" placeholder="Stacks" id="stacks">
         <input type="number" name="value" placeholder="Valor R$" id="value">
