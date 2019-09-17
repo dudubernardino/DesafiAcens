@@ -127,6 +127,35 @@ Criando um novo projeto com JS
   }
 ```
 
+## Filter
+**Função para filtrar projetos**
+```javascript
+  const filter = () => {
+  let input, filter, table, tr, td, txtValue;
+
+  input = document.getElementById('filterInput');
+
+  filter = input.value.toUpperCase();
+
+  table = document.getElementById('projects');
+
+  tr = table.getElementsByTagName('tr');
+
+  for(let i = 0; i < tr.length;i++) {
+    td = tr[i].getElementsByTagName('td')[0];
+
+    if(td) {
+      txtValue = td.textContent || td.innerText;
+      if(txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = '';
+      } else {
+        tr[i].style.display = 'none';
+      }
+    }
+  }
+};
+```
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
