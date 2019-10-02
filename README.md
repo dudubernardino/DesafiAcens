@@ -1,6 +1,6 @@
 # Desafio Acens
 
-Desenvolver um sistema web usando HTML, CSS e JS.
+Desenvolver um sistema web usando HTML, CSS e JS. Com carinho.
 
 ## Getting Started
 
